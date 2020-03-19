@@ -1,3 +1,5 @@
+% This code has been developed by Ali Rahmani Nejad at IASBS for educational puporses
+
 clear all
 %% INITIALIZATIONS
 fid = fopen('features.txt');
