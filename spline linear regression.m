@@ -75,16 +75,3 @@ for i=1:q
    base_W = funcs(i,:);
 end
 
-% Test phase
-% feats_test = test(:,1);
-% phi_test = [ones(size(feats_test,1),1)];
-% for i=1:p
-%     phi_test = [phi_test feats_test.^i];
-% end
-% 
-% temp = feats_test - k(i);
-% temp(temp<0) = 0;
-% for i=1:q
-%     phi_test = [phi_test (temp).^p];
-% end
-% pred = phi_test * W;
