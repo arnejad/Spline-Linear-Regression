@@ -17,7 +17,7 @@ p = 1;
 q = 5;
 lambda = 10;
 
-%% SIMPLE LINEAR REGRESSION
+%% SPLINE LINEAR REGRESSION
 
 % Train phase
 
@@ -55,9 +55,7 @@ for i=1:q
     end
     
     subplot(1,q,i)
-    xlim([k(i) k(i+1)]);  % No equal sign.
-%     ylim([-2 2.5]);
-%     fplot(poly2sym(flip(Beta)), 'red') % draw the function    
+    xlim([k(i) k(i+1)]);    
     fplot(poly2sym(Model), 'red') % draw the function    
     hold on;
     scatter(trainPart, labelsPart, 'blue','filled')
